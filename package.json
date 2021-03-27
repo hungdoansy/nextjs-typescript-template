@@ -1,7 +1,10 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
+  "name": "nextjs-typescript-template",
+  "version": "1.0.0",
   "private": true,
+  "description": "NextJs template with Typescript, Prettier and ESLint",
+  "keywords": ["nextjs", "typescript"],
+  "author": "Sy-Hung Doan <hungdoansy@gmail.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
