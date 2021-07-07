@@ -1,6 +1,7 @@
 import Head from "next/head";
-
 import { useEffect, useState } from "react";
+
+import HelloWorld from "components/HelloWorld";
 
 const Home: React.FC = () => {
   const [count, setCount] = useState(1);
@@ -49,6 +50,8 @@ const Home: React.FC = () => {
             <h3>Deploy &rarr;</h3>
             <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
           </a>
+
+          <HelloWorld />
         </div>
       </main>
 
