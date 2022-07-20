@@ -1,0 +1,5 @@
+{
+    "editor.defaultFormatter": "svipas.prettier-plus",
+    "editor.formatOnSave": true,
+    "prettier.requireConfig": true
+}
