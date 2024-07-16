@@ -8,7 +8,7 @@
         "start": "next start",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "prettify": "prettier './**/*.{js,jsx,ts,tsx,css,md,json,yml,yaml,html}' --config ./.prettierrc.js",
+        "prettify": "prettier './**/*.{js,jsx,mjs,cjs,ts,tsx,css,md,json,yml,yaml,html}' --config ./.prettierrc.js",
         "format": "npm run prettify -- --check",
         "format:fix": "npm run prettify -- --write"
     },
@@ -17,9 +17,11 @@
         "node": "^18.20.3"
     },
     "dependencies": {
+        "@t3-oss/env-nextjs": "0.10.1",
         "next": "14.2.5",
         "react": "18.2.0",
-        "react-dom": "18.2.0"
+        "react-dom": "18.2.0",
+        "zod": "3.23.8"
     },
     "devDependencies": {
         "@svgr/webpack": "^8.1.0",
