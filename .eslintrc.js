@@ -24,11 +24,19 @@ module.exports = {
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
         "prettier",
+        "next/core-web-vitals",
         "plugin:prettier/recommended", // Make this the last element so prettier config overrides other formatting rules
     ],
-    plugins: ["react-hooks"],
+    plugins: ["react-hooks", "unused-imports"],
     rules: {
-        "prettier/prettier": ["error", {}, { usePrettierrc: true }],
+        "unused-imports/no-unused-imports": "error",
+        "prettier/prettier": [
+            "error",
+            {
+                endOfLine: "auto",
+            },
+            { usePrettierrc: true },
+        ],
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
@@ -71,5 +79,19 @@ module.exports = {
         "@typescript-eslint/no-empty-function": "off",
         "react/jsx-boolean-value": ["warn", "never"],
         "react/jsx-curly-brace-presence": "warn",
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            { ignoreRestSiblings: true, argsIgnorePattern: "^_", caughtErrorsIgnorePattern: "^_" },
+        ],
+        "no-useless-rename": [
+            "error",
+            {
+                ignoreDestructuring: false,
+                ignoreImport: false,
+                ignoreExport: false,
+            },
+        ],
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/prefer-as-const": "off",
     },
 }
